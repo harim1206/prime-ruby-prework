@@ -19,4 +19,6 @@ while i <= num/2 + 1
   i += 1
 end
 
+return true
+
 end
