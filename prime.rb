@@ -13,7 +13,7 @@ def prime?(num)
 i = 2
 while i <= num/2 + 1
   if num % i == 0
-    false
+    return false
     i += 1
   end
 end
