@@ -11,12 +11,17 @@ def prime?(num)
 # if n is odd, it's n/2 --> 11 / 2 = 5 --> i <= n/2+1
 
 i = 2
-while i <= num/2 + 1
-  if num % i == 0
-    return false
 
+if num < 1
+  return false
+else
+  while i <= num/2 + 1
+    if num % i == 0
+      return false
+
+    end
+    i += 1
   end
-  i += 1
 end
 
 return true
